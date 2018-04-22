@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLD", "SLD\SLD.csproj", "{857B7AD5-3BD6-4826-9769-2C9C73BB3428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLDManager", "SLDManager\SLDManager.csproj", "{8E482F90-ED8A-4897-AA46-EC1CB7100795}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DF91F47-B39C-4CBE-A679-F1492B21D128} = {9DF91F47-B39C-4CBE-A679-F1492B21D128}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLDClient", "SLDClient\SLDClient.csproj", "{9DF91F47-B39C-4CBE-A679-F1492B21D128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DowareSLDService", "DowareSLDService\DowareSLDService.csproj", "{4EFB7E1A-CA5E-4A95-9113-19F1C74C55E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Programs", "Programs", "{E8D51D32-70FF-4FCB-A468-4035D27C741C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLDServerProgramHub", "SLDServerProgramHub\SLDServerProgramHub.csproj", "{48CA0C02-DC27-42C2-99BA-6489241C994F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupDB", "BackupDB\BackupDB.csproj", "{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{857B7AD5-3BD6-4826-9769-2C9C73BB3428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857B7AD5-3BD6-4826-9769-2C9C73BB3428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857B7AD5-3BD6-4826-9769-2C9C73BB3428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857B7AD5-3BD6-4826-9769-2C9C73BB3428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E482F90-ED8A-4897-AA46-EC1CB7100795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E482F90-ED8A-4897-AA46-EC1CB7100795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E482F90-ED8A-4897-AA46-EC1CB7100795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E482F90-ED8A-4897-AA46-EC1CB7100795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF91F47-B39C-4CBE-A679-F1492B21D128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF91F47-B39C-4CBE-A679-F1492B21D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF91F47-B39C-4CBE-A679-F1492B21D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF91F47-B39C-4CBE-A679-F1492B21D128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFB7E1A-CA5E-4A95-9113-19F1C74C55E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFB7E1A-CA5E-4A95-9113-19F1C74C55E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFB7E1A-CA5E-4A95-9113-19F1C74C55E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFB7E1A-CA5E-4A95-9113-19F1C74C55E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CA0C02-DC27-42C2-99BA-6489241C994F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CA0C02-DC27-42C2-99BA-6489241C994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CA0C02-DC27-42C2-99BA-6489241C994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CA0C02-DC27-42C2-99BA-6489241C994F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48CA0C02-DC27-42C2-99BA-6489241C994F} = {E8D51D32-70FF-4FCB-A468-4035D27C741C}
+		{F4FB44C1-CBE1-4779-BC57-3D8CDCE75805} = {E8D51D32-70FF-4FCB-A468-4035D27C741C}
+	EndGlobalSection
+EndGlobal
