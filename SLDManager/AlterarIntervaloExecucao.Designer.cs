@@ -40,9 +40,24 @@
             // txIntervalo
             // 
             this.txIntervalo.Location = new System.Drawing.Point(131, 41);
+            this.txIntervalo.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.txIntervalo.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.txIntervalo.Name = "txIntervalo";
             this.txIntervalo.Size = new System.Drawing.Size(61, 20);
             this.txIntervalo.TabIndex = 0;
+            this.txIntervalo.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 

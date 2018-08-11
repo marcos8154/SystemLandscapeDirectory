@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ControllerMapping class="SLD.Controller.AmbienteController">
+  <RequestMapping value="CriarAmbiente"/>
+  <RequestMapping value="ListarAmbientes"/>
+  <RequestMapping value="ValidarConexao"/>
+  <RequestMapping value="RemoverAmbiente"/>
+  <RequestMapping value="SetStatus"/>
+  <RequestMapping value="GetStatus"/>
+  <RequestMapping value="ServidorRegistrado"/>
+  <RequestMapping value="RegistrarServidor"/>
+  <RequestMapping value="TestarAmbiente">
+    <RequestParameter entity="SLD.Model.Ambiente" alias="ambiente"/>
+  </RequestMapping>
+</ControllerMapping>

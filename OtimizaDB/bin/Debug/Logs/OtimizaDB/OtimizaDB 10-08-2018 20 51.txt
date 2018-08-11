@@ -1,0 +1,6 @@
+Doware SLD Server Program Hub - Detalhamento de logs do programa
+
+Programa: OtimizaDB
+Data/Hora: 10/08/2018 20:51:41
+Detalhes: O procedimento de manutenção dos Índices do banco de dados foram concluídos com erros: 
+Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:55555

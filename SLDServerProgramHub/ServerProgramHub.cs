@@ -25,6 +25,25 @@ namespace SLDServerProgramHub
         public string MyProgramName { get; set; }
         public string NomeAmbiente { get; set; }
 
+        public void WriteLog(string msg)
+        {
+            if (!Directory.Exists($@".\Logs\{MyProgramName}\"))
+                Directory.CreateDirectory($@".\Logs\{MyProgramName}\");
+
+            string texto = $@"Doware SLD Server Program Hub - Detalhamento de logs do programa
+
+Programa: {MyProgramName}
+Data/Hora: {DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")}
+Detalhes: {msg}";
+
+            string fileName = $@".\Logs\{MyProgramName}\{MyProgramName} {DateTime.Now.ToString("dd-MM-yyyy")}.txt";
+
+            if (File.Exists(fileName))
+                File.AppendAllText(fileName, "\n" + texto);
+            else
+                File.WriteAllText(fileName, texto);
+        }
+
         private void Registrar()
         {
             RequestBody rb = RequestBody.Create("ServerProgramController", "SalvarPrograma")

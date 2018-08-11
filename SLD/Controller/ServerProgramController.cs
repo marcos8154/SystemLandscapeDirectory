@@ -20,7 +20,9 @@ namespace SLD.Controller
             if (monitor != null)
                 monitor.Executar();
 
-            return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "A solicitação foi enviada ao monitor do programa", true));
+            return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, (monitor == null
+                ? "O programa não está na lista de monitoramento"
+                : "A solicitação foi enviada ao monitor do programa"), true));
         }
 
         public ActionResult AlterarIntervaloExecucao(string nomePrograma, string ambiente,
@@ -84,7 +86,11 @@ where Nome = @nome and ambiente = @ambiente";
             info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
             Process.Start(info);
-            Thread.Sleep(100);
+
+            while (Process.GetProcessesByName(programa).Length > 0)
+            {
+                //aguardando termino do processo para prosseguir
+            }
 
             string[] parametros = File.ReadAllLines(@".\ServerPrograms\ParamsOutPut.txt");
             if (parametros.Length == 0)
@@ -142,7 +148,8 @@ where Nome = @nome and ambiente = @ambiente";
             SqlConnection conn = null;
             try
             {
-                string sql = "insert into ProgramaServidor (Nome, Parametros, Ambiente, ValoresParametros) values (@1, @2, @3, @4)";
+                string sql = @"insert into ProgramaServidor (Nome, Parametros, Ambiente, ValoresParametros, IntervaloExecucao, ExecutaNaInicializacao)
+ values (@1, @2, @3, @4, 59, 0)";
                 conn = ConnectionManager.GetConnection();
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@1", nome);
@@ -172,7 +179,7 @@ where Nome = @nome and ambiente = @ambiente";
             info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
             Process.Start(info);
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
 
             bool registrado = ProgramaRegistrado(nome, ambiente);
             return ActionResult.Json(new OperationResult((registrado ? StatusResult.OPERACAO_OK : StatusResult.FALHA_INTERNA),

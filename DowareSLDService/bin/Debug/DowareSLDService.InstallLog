@@ -1,0 +1,354 @@
+﻿Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Serviço Doware SLD Service está sendo removido do sistema...
+Ocorreu uma exceção durante a desinstalação do instalador System.ServiceProcess.ServiceInstaller.
+System.ComponentModel.Win32Exception: O serviço especificado não existe como serviço instalado
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Serviço Doware SLD Service foi instalado com êxito.
+Criando a origem de EventLog Doware SLD Service no log Application...
+Confirmando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Serviço Doware SLD Service está sendo removido do sistema...
+Serviço Doware SLD Service foi removido com êxito do sistema.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Serviço Doware SLD Service foi instalado com êxito.
+Criando a origem de EventLog Doware SLD Service no log Application...
+Confirmando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Ocorreu uma exceção durante a desinstalação do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Acesso ao Registro solicitado não é permitido.
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Criando a origem de EventLog Doware SLD Service no log Application...
+Revertendo o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Restaurando o log de eventos para o estado anterior da origem Doware SLD Service.
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Serviço Doware SLD Service está sendo removido do sistema...
+Serviço Doware SLD Service foi removido com êxito do sistema.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Serviço Doware SLD Service foi instalado com êxito.
+Criando a origem de EventLog Doware SLD Service no log Application...
+Confirmando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Desinstalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Removendo a origem do EventLog Doware SLD Service.
+Aviso: a origem Doware SLD Service não está registrada no computador local.
+Serviço Doware SLD Service está sendo removido do sistema...
+Ocorreu uma exceção durante a desinstalação do instalador System.ServiceProcess.ServiceInstaller.
+System.ComponentModel.Win32Exception: O serviço especificado não existe como serviço instalado
+Ocorreu uma exceção ao desinstalar. Essa exceção será ignorada e a desinstalação continuará. Mas talvez o aplicativo não seja totalmente desinstalado após a conclusão da desinstalação.
+Instalando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog
+Instalando o serviço Doware SLD Service...
+Serviço Doware SLD Service foi instalado com êxito.
+Criando a origem de EventLog Doware SLD Service no log Application...
+Confirmando o assembly 'C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   assemblypath = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.exe
+   logfile = C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\bin\Debug\DowareSLDService.InstallLog

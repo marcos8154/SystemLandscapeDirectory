@@ -34,6 +34,7 @@ namespace SLDManager
         {
             try
             {
+                panel.Controls.Clear();
                 List<string> parametros = new ServerProgramController().ListarParametrosPrograma(cbPrograma.Text);
                 parametros.ForEach(p =>
                 {

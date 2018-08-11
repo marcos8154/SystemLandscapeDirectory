@@ -12,19 +12,26 @@ namespace SLD.Controller
 {
     public class AmbienteController : IController
     {
-   
-        public ActionResult ServidorRegistrado()
+
+        public bool IsServidorAtivado()
         {
             try
             {
                 SqlConnection conn = ConnectionManager.GetConnection();
                 conn.Close();
-                return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "Servidor registrado", null));
+                return true;
             }
             catch (Exception ex)
             {
-                return ActionResult.Json(new OperationResult(StatusResult.FALHA_VALIDACAO, ex.Message, null));
+                return false;
             }
+        }
+
+        public ActionResult ServidorRegistrado()
+        {
+            return (IsServidorAtivado()
+                    ? ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "Servidor registrado", null))
+                    : ActionResult.Json(new OperationResult(StatusResult.FALHA_VALIDACAO, "Servidor não registrado", null)));
         }
 
         private SqlConnection GetConnection(string servidor, string usuario, string senha)
@@ -88,7 +95,7 @@ create table ProgramaServidor
 (
 	Id int identity(1,1) not null,
 	Ambiente varchar(100) not null,
-	Nome varchar(100) unique not null,
+	Nome varchar(100) not null,
 	Parametros varchar(3000) not null,
 	ValoresParametros varchar(500) not null,
 	IntervaloExecucao int not null default 5,

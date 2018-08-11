@@ -50,6 +50,13 @@ namespace SLD.Model
             info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
             Process.Start(info);
+            
+            System.Threading.Thread.Sleep(1000);
+
+            while (Process.GetProcessesByName(Programa.Nome).Length > 0)
+            {
+                //aguardando termino do processo para prosseguir
+            }
         }
     }
 }

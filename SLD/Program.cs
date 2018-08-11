@@ -28,33 +28,40 @@ namespace SLD
             server.RegisterAllModels(Assembly.GetExecutingAssembly(), "SLD.Model");
             server.RegisterAllControllers(Assembly.GetExecutingAssembly(), "SLD.Controller");
             server.ActionInvoked += Server_ActionInvoked;
-
-            AtualizaFaturasTask task = new AtualizaFaturasTask();
-            task.Execute(1);
-
-            new Thread(() =>
+            
+            if (new AmbienteController().IsServidorAtivado())
             {
-                while (true)
+                AtualizaFaturasTask task = new AtualizaFaturasTask();
+                task.Execute(1);
+
+                new Thread(() =>
                 {
-                    Thread.Sleep(60000 * 1);
-                    AtualizaFaturasTask t = new AtualizaFaturasTask();
-                    t.Execute(1);
+                    while (true)
+                    {
+                        Thread.Sleep(60000 * 1);
+                        AtualizaFaturasTask t = new AtualizaFaturasTask();
+                        t.Execute(1);
+                    }
+                }).Start();
+
+                new Thread(() =>
+                {
+                    server.Start();
+                }).Start();
+
+                List<ProgramaServidor> programas = new ServerProgramController().GetProgramasBanco();
+                foreach (ProgramaServidor programa in programas)
+                {
+                    MonitorExecucaoPrograma monitor = new MonitorExecucaoPrograma(programa);
+                    Monitores.Add(monitor);
+                    if (programa.ExecutaNaInicializacao)
+                        monitor.Executar();
+
+                    monitor.Start();
                 }
-            }).Start();
-
-
-            List<ProgramaServidor> programas = new ServerProgramController().GetProgramasBanco();
-            foreach (ProgramaServidor programa in programas)
-            {
-                MonitorExecucaoPrograma monitor = new MonitorExecucaoPrograma(programa);
-                Monitores.Add(monitor);
-                if (programa.ExecutaNaInicializacao)
-                    monitor.Executar();
-
-                monitor.Start();
             }
 
-            server.Start();
+            Console.ReadKey();
         }
 
         private static void T_Elapsed(object sender, ElapsedEventArgs e)

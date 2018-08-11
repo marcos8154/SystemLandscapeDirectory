@@ -393,7 +393,8 @@ CPUID = '{CPUID}' and cnpj = '{cnpj}'";
                 if (proximaFatura == null)
                     return;
 
-                bool fimContrato = (faturas.Where(e => DateTime.Parse(e.DataVencimento).Date > proximaData).Count() == 0);
+
+                bool fimContrato = (faturas.Where(e => DateTime.Parse(e.DataVencimento).Date.AddMonths(1) > proximaData).Count() == 0);
                 if (fimContrato)
                     throw new Exception("-35:O contrato do produto chegou ao fim. Entre em contato com o setor financeiro da Doware para realizar a renovação do contrato");
                 

@@ -1,0 +1,6 @@
+Doware SLD Server Program Hub - Detalhamento de logs do programa
+
+Programa: OtimizaDB
+Data/Hora: 10/08/2018 20:02:03
+Detalhes: O procedimento de manutenção dos Índices do banco de dados foram concluídos com erros: 
+Não é possível encontrar o índice 'IMV_Id'.

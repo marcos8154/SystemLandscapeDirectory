@@ -67,7 +67,7 @@ namespace SLDManager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ListarAmbientes();
+            Close();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace SLDManager
             if (WindowState == FormWindowState.Minimized)
             {
                 notifyIcon.Visible = true;
-                notifyIcon.ShowBalloonTip(1000, "Doware Curae - SLD Manager", "Clique para restaurar", ToolTipIcon.Info);
+                notifyIcon.ShowBalloonTip(1000, "Doware FrontStore - SLD Manager", "Clique para restaurar", ToolTipIcon.Info);
                 this.Hide();
                 this.ShowInTaskbar = false;
             }

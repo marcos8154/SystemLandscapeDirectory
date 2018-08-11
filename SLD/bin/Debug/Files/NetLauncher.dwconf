@@ -1,0 +1,10 @@
+﻿*-------------------------------------------------*
+|   Doware  NetLauncher auto config file          |
+*-------------------------------------------------*
+<------------   USER PREFERENCES     ----------->
+
+<------------   APPLICATION SERVER   ----------->
+
+appserver=localhost
+appserver_port=4519
+default_application=SLD

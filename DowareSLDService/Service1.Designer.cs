@@ -33,7 +33,7 @@
             // 
             this.CanPauseAndContinue = true;
             this.CanShutdown = true;
-            this.ServiceName = "Doware SLD Service";
+            this.ServiceName = "Doware_SLD_Service";
 
         }
 
