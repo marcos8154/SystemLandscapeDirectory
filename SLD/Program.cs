@@ -28,7 +28,36 @@ namespace SLD
             server.RegisterAllModels(Assembly.GetExecutingAssembly(), "SLD.Model");
             server.RegisterAllControllers(Assembly.GetExecutingAssembly(), "SLD.Controller");
             server.ActionInvoked += Server_ActionInvoked;
-            
+
+            new Thread(() =>
+            {
+                try
+                {
+                    server.Start();
+                }
+                catch (Exception ex)
+                {
+                    string msg = ex.Message;
+                    if (ex.InnerException != null)
+                        msg += $"\n{ex.InnerException.Message}";
+
+                    LogController.WriteLog("FALHA NA INICIALIZAÇÃO DO SERVIDOR DO SLD: " + msg);
+                }
+            }).Start();
+
+            Thread.Sleep(2000);
+
+            new Thread(() =>
+            {
+                MonitorarSincronizacaoServidorWeb();
+                IniciarMonitorExecucaoProgramas();
+            }).Start();
+
+            Console.ReadKey();
+        }
+
+        private static void MonitorarSincronizacaoServidorWeb()
+        {
             if (new AmbienteController().IsServidorAtivado())
             {
                 AtualizaFaturasTask task = new AtualizaFaturasTask();
@@ -43,12 +72,13 @@ namespace SLD
                         t.Execute(1);
                     }
                 }).Start();
+            }
+        }
 
-                new Thread(() =>
-                {
-                    server.Start();
-                }).Start();
-
+        private static void IniciarMonitorExecucaoProgramas()
+        {
+            try
+            {
                 List<ProgramaServidor> programas = new ServerProgramController().GetProgramasBanco();
                 foreach (ProgramaServidor programa in programas)
                 {
@@ -60,8 +90,7 @@ namespace SLD
                     monitor.Start();
                 }
             }
-
-            Console.ReadKey();
+            catch { }
         }
 
         private static void T_Elapsed(object sender, ElapsedEventArgs e)

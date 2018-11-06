@@ -1,2 +1,2 @@
-caminhoScript:Caminho completo do script de manutenção e otimização da base
+caminhoDestino:Caminho completo do destino do backup
 
