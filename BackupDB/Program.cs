@@ -45,12 +45,12 @@ namespace BackupDB
                     Directory.Delete(d.FullName, true);
 
                 Ambiente amb = new AmbienteController().GetAmbiente(hub.NomeAmbiente);
-                string sql = $@"execute dbo.DatabaseBackup
-@Databases = '{amb.Base}',
-@Directory = '{caminho}',
-@BackupType = 'FULL',
-@Verify = 'Y',
-@CheckSum = 'Y'";
+              
+                string sql = $@"BACKUP DATABASE {amb.Base}  
+TO DISK = '{caminho}\{amb.Base}.bak'  
+   WITH FORMAT,  
+      MEDIANAME = '{amb.Base}',  
+      NAME = '{amb.Base}'";
 
                  conn = hub.GetConexaoAmbiente();
                 SqlCommand cmd = new SqlCommand(sql, conn);

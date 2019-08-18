@@ -19,24 +19,7 @@ namespace SLDManager
             dataGridProgramas.AutoGenerateColumns = false;
             dataGridProgramas.DataSource = new ServerProgramController().ListarProgramas();
         }
-
-        private void BuscarLicencas()
-        {
-            try
-            {
-                LicencaController controller = new LicencaController();
-                List<Licenca> licencas = controller.ListarLicencas();
-                dataGridLicencas.DataSource = licencas;
-
-                if (licencas.Count > 0)
-                    BuscarFaturas(licencas.First().Id);
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
+        
         private void BuscarAmbientes()
         {
             try
@@ -66,7 +49,6 @@ namespace SLDManager
             if (this.Visible)
             {
                 BuscarAmbientes();
-                BuscarLicencas();
             }
         }
 
@@ -114,39 +96,7 @@ Tenha certeza do que está fazendo!", "Confirmação", MessageBoxButtons.YesNo, 
                 MessageBox.Show(ex.Message, "SLD", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void BuscarFaturas(int licencaId)
-        {
-            LicencaController controller = new LicencaController();
-            List<FaturaLicenca> faturas = controller.ListarFaturas(licencaId);
-
-            dataGridFaturas.Rows.Clear();
-            faturas.ForEach(f => dataGridFaturas.Rows.Add(
-                    Convert.ToDateTime(f.DataVencimento).ToString("dd/MM/yyyy"),
-                    Guid.Parse(f.IdPagamento) == Guid.Empty ? "Não" : "Sim",
-                    Guid.Parse(f.IdPagamento) == Guid.Empty ? string.Empty : f.IdPagamento.ToString()));
-        }
-
-        private void dataGridLicencas_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (dataGridLicencas.CurrentRow == null)
-                return;
-            if (dataGridLicencas.CurrentRow.Cells[0].Value == null)
-                return;
-
-            int licencaId = int.Parse(dataGridLicencas.CurrentRow.Cells[0].Value.ToString());
-            BuscarFaturas(licencaId);
-        }
-
-        private void btRegistrar_Click(object sender, EventArgs e)
-        {
-            RegistrarSistema rs = new RegistrarSistema();
-            rs.ShowDialog();
-
-            BuscarLicencas();
-            BuscarAmbientes();
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             IncluirProgramaSLD i = new IncluirProgramaSLD();

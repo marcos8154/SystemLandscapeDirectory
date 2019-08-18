@@ -6,7 +6,6 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\b
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\bin\Debug\SLDClient.dll
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\bin\Debug\SLDClient.pdb
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.csprojResolveAssemblyReference.cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.Configuracao.resources
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.Form1.resources
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.IncluirProgramaSLD.resources
@@ -17,3 +16,6 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\o
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.exe
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.pdb
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.AlterarIntervaloExecucao.resources
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.csprojAssemblyReference.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDManager\obj\Debug\SLDManager.csproj.CopyComplete

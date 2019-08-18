@@ -1,18 +1,10 @@
 ﻿using MobileAppServer.ServerObjects;
-using RegistroNET.Models;
 using SLD.Controller;
 using SLD.Model;
-using SLD.RegistroNET;
-using SLD.Tasks;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Timers;
 
 namespace SLD
@@ -28,6 +20,10 @@ namespace SLD
             server.RegisterAllModels(Assembly.GetExecutingAssembly(), "SLD.Model");
             server.RegisterAllControllers(Assembly.GetExecutingAssembly(), "SLD.Controller");
             server.ActionInvoked += Server_ActionInvoked;
+
+            var conc = new ConcentradorFiscalController();
+            conc.Parar();
+            conc.Iniciar();
 
             new Thread(() =>
             {
@@ -45,40 +41,32 @@ namespace SLD
                 }
             }).Start();
 
-            Thread.Sleep(2000);
+            Thread.Sleep(10000);
 
             new Thread(() =>
             {
-                MonitorarSincronizacaoServidorWeb();
+                //  MonitorarSincronizacaoServidorWeb();
                 IniciarMonitorExecucaoProgramas();
             }).Start();
 
             Console.ReadKey();
         }
 
-        private static void MonitorarSincronizacaoServidorWeb()
+        public static void ReiniciarMonitorExecucaoProgramas()
         {
-            if (new AmbienteController().IsServidorAtivado())
-            {
-                AtualizaFaturasTask task = new AtualizaFaturasTask();
-                task.Execute(1);
-
-                new Thread(() =>
-                {
-                    while (true)
-                    {
-                        Thread.Sleep(60000 * 1);
-                        AtualizaFaturasTask t = new AtualizaFaturasTask();
-                        t.Execute(1);
-                    }
-                }).Start();
-            }
+            Console.Write("*** INTERROMPENDO MONITORAMENTO DE PROGRAMAS DO SERVIDOR ***");
+            Monitores.ForEach(m => m.Stop());
+            Monitores = null;
+            Monitores = new List<MonitorExecucaoPrograma>();
+            Thread.Sleep(1000);
+            IniciarMonitorExecucaoProgramas();
         }
 
         private static void IniciarMonitorExecucaoProgramas()
         {
             try
             {
+                Console.Write("*** INICIANDO MONITORAMENTO DE PROGRAMAS DO SERVIDOR ***");
                 List<ProgramaServidor> programas = new ServerProgramController().GetProgramasBanco();
                 foreach (ProgramaServidor programa in programas)
                 {
@@ -90,13 +78,14 @@ namespace SLD
                     monitor.Start();
                 }
             }
-            catch { }
-        }
-
-        private static void T_Elapsed(object sender, ElapsedEventArgs e)
-        {
-            AtualizaFaturasTask task = new AtualizaFaturasTask();
-            task.Execute(1);
+            catch (Exception ex)
+            {
+                var color = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write(ex.Message);
+                Console.Write("\n" + ex.StackTrace);
+                Console.ForegroundColor = color;
+            }
         }
 
         private static void Server_ActionInvoked()

@@ -1,0 +1,12 @@
+﻿netsh advfirewall firewall add rule name="SLD Standard Port" protocol=TCP dir=in localport=55555 action=allow
+netsh advfirewall firewall add rule name="ConcentradorFiscal Standard Port" protocol=TCP dir=in localport=9095 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#1" protocol=TCP dir=in localport=1430 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#2" protocol=TCP dir=in localport=1431 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#3" protocol=TCP dir=in localport=1432 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#4" protocol=TCP dir=in localport=1433 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#5" protocol=TCP dir=in localport=1434 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#6" protocol=TCP dir=in localport=1435 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#7" protocol=TCP dir=in localport=1436 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#8" protocol=TCP dir=in localport=1437 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#9" protocol=TCP dir=in localport=1438 action=allow
+netsh advfirewall firewall add rule name="SQL Server Port#10" protocol=TCP dir=in localport=1439 action=allow

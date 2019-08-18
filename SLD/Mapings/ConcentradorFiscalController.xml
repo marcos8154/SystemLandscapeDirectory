@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ControllerMapping class="SLD.Controller.ConcentradorFiscalController">
+  <RequestMapping value="Iniciar"/>
+  <RequestMapping value="Parar"/>
+  <RequestMapping value="BuscarAtualizacao"/>
+  <RequestMapping value="ServidorEmExecucao"/>
+</ControllerMapping>

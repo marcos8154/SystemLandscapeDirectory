@@ -14,6 +14,11 @@ namespace SLD.Model
         private Timer Timer { get; set; }
         public ProgramaServidor Programa { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Programa.Nome}, Intervalo={Programa.IntervaloExecucao}, Inicialização={Programa.ExecutaNaInicializacao}";
+        }
+
         public MonitorExecucaoPrograma(ProgramaServidor programa)
         {
             Programa = programa;

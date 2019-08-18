@@ -6,3 +6,4 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDSer
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\obj\Debug\DowareSLDService.csproj.GenerateResource.Cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\obj\Debug\DowareSLDService.exe
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\obj\Debug\DowareSLDService.pdb
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\DowareSLDService\obj\Debug\DowareSLDService.csproj.CoreCompileInputs.cache

@@ -10,4 +10,7 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\bin
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\bin\Debug\SLDServerProgramHub.pdb
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.exe
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.pdb
-C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.csprojResolveAssemblyReference.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\bin\Debug\SLDServerProgramHub.dll.config
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.csprojAssemblyReference.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\BackupDB\obj\Debug\BackupDB.csproj.CopyComplete

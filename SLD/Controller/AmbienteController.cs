@@ -69,6 +69,25 @@ namespace SLD.Controller
             }
         }
 
+        private void CriaTriggerImpedeLoginWindows(SqlConnection conn)
+        {
+            string sql = @"
+CREATE TRIGGER ImpedeConexaoViaWindowsAuthentication
+ON ALL SERVER WITH EXECUTE AS 'sa'
+FOR LOGON
+AS
+BEGIN
+IF(EXISTS(SELECT TOP 1 1 FROM sys.dm_exec_sessions WHERE is_user_process = 1 AND LEN(LTRIM(RTRIM(nt_domain))) > 0 AND original_login_name LIKE ORIGINAL_LOGIN()))
+    ROLLBACK;
+END;";
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch { }
+        }
+
         public ActionResult RegistrarServidor(string servidor,
             string usuario, string senha)
         {
@@ -148,6 +167,9 @@ PRIMARY KEY CLUSTERED
                 SqlConnection conn = GetConnection(servidor, usuario, senha);
                 SqlCommand cmd = new SqlCommand("CREATE DATABASE SLD", conn);
                 cmd.ExecuteNonQuery();
+
+                CriaTriggerImpedeLoginWindows(conn);
+
                 conn.Close();
 
                 conn = GetConnection(servidor, usuario, senha);
@@ -219,7 +241,7 @@ values (@Nome, @Servidor, @Usuario, @Senha, @Base, @Versao, 1)");
                             Usuario = Compactor.FromCompact(dr.GetString(2)),
                             Senha = Compactor.FromCompact(dr.GetString(3)),
                             Base = Compactor.FromCompact(dr.GetString(4)),
-                            Versao = dr.GetString(5),
+                          //  Versao = dr.GetString(5),
                             Online = dr.GetBoolean(6)
                         });
                     }

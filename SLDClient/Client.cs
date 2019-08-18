@@ -124,6 +124,9 @@ MAXPACKETSIZE=4096";
             try
             {
                 string responseText = Encoding.GetString(ReceiveBytes());
+                if (!responseText.EndsWith("}"))
+                    responseText += "}";
+                responseText = responseText.Replace("\t", "");
 
                 ServerResponse response = JsonConvert.DeserializeObject<ServerResponse>(responseText);
                 if (response.Type == 1)

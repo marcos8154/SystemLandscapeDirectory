@@ -8,4 +8,5 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerPro
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\bin\Debug\SLDClient.pdb
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\obj\Debug\SLDServerProgramHub.dll
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\obj\Debug\SLDServerProgramHub.pdb
-C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\obj\Debug\SLDServerProgramHub.csprojResolveAssemblyReference.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\obj\Debug\SLDServerProgramHub.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDServerProgramHub\obj\Debug\SLDServerProgramHub.csproj.CopyComplete

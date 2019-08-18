@@ -41,6 +41,8 @@
             this.btSetOnline = new System.Windows.Forms.Button();
             this.btSetOffline = new System.Windows.Forms.Button();
             this.lbStatusAmbiente = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btOK
@@ -89,9 +91,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 160);
+            this.button1.Location = new System.Drawing.Point(81, 115);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.Size = new System.Drawing.Size(205, 23);
             this.button1.TabIndex = 7;
             this.button1.Text = "&Configurar";
             this.button1.UseVisualStyleBackColor = true;
@@ -109,6 +111,7 @@
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(-3, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(302, 1);
@@ -146,11 +149,36 @@
             this.lbStatusAmbiente.TabIndex = 11;
             this.lbStatusAmbiente.Text = "Offline";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(11, 196);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(163, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "SLD Manager - v1.2.06";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(11, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(170, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "powered by Doware Soluções";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(298, 234);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lbStatusAmbiente);
             this.Controls.Add(this.btSetOnline);
             this.Controls.Add(this.label3);
@@ -184,6 +212,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btSetOnline;
         private System.Windows.Forms.Label lbStatusAmbiente;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

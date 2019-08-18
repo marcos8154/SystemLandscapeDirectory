@@ -13,6 +13,11 @@ namespace SLD.Controller
 {
     public class ServerProgramController : IController
     {
+        public ServerProgramController()
+        {
+
+        }
+
         public ActionResult Executar(string nomePrograma, string ambiente)
         {
             MonitorExecucaoPrograma monitor = Program.Monitores.Where(m => m.Programa.Nome.Equals(nomePrograma) &&
@@ -42,21 +47,7 @@ where Nome = @nome and ambiente = @ambiente";
             cmd.ExecuteNonQuery();
             conn.Close();
 
-            MonitorExecucaoPrograma monitor = Program.Monitores.Where(m => m.Programa.Nome.Equals(programa.Nome) &&
-                   m.Programa.Ambiente.Equals(programa.Ambiente)).FirstOrDefault();
-            if (monitor != null)
-            {
-                Program.Monitores.Remove(monitor);
-
-                programa = GetProgramasBanco().FirstOrDefault(p => p.Nome.Equals(nomePrograma) && p.Ambiente.Equals(ambiente));
-                monitor.Stop();
-
-                monitor = new MonitorExecucaoPrograma(programa);
-                monitor.Start();
-
-                Program.Monitores.Add(monitor);
-            }
-
+            Program.ReiniciarMonitorExecucaoProgramas();
             return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "", true));
         }
 
@@ -71,6 +62,7 @@ where Nome = @nome and ambiente = @ambiente";
             cmd.ExecuteNonQuery();
             conn.Close();
 
+            Program.ReiniciarMonitorExecucaoProgramas();
             return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "", true));
         }
 
@@ -159,6 +151,7 @@ where Nome = @nome and ambiente = @ambiente";
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
+                Program.ReiniciarMonitorExecucaoProgramas();
                 return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "Programa registrado com exito", true));
             }
             catch (Exception ex)
@@ -179,7 +172,7 @@ where Nome = @nome and ambiente = @ambiente";
             info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
             Process.Start(info);
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
 
             bool registrado = ProgramaRegistrado(nome, ambiente);
             return ActionResult.Json(new OperationResult((registrado ? StatusResult.OPERACAO_OK : StatusResult.FALHA_INTERNA),

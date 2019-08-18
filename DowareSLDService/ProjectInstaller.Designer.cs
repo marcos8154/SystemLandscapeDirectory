@@ -39,7 +39,7 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "System Landscape Directory do Curae - Varejo";
+            this.serviceInstaller1.Description = "Gerenciador de Ambientes para o FrontStore";
             this.serviceInstaller1.DisplayName = "Doware SLD Service";
             this.serviceInstaller1.ServiceName = "Doware_SLD_Service";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
