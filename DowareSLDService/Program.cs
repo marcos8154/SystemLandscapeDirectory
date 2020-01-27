@@ -34,6 +34,7 @@ namespace DowareSLDService
                     string parameter = string.Concat(args);
                     if (parameter == "-i")
                     {
+                        Console.WriteLine("Tentando instalar o serviço...");
                         try
                         {
                             ManagedInstallerClass.InstallHelper(new string[] { "/u", Assembly.GetExecutingAssembly().Location });

@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace DowareSLDService
 {
@@ -29,7 +23,7 @@ namespace DowareSLDService
                 p.FileName = $@"{caminho}\SLDServer\SLD.exe";
                 p.WorkingDirectory = $@"{caminho}\SLDServer\";
                 p.UseShellExecute = true;
-             
+
                 Process.Start(p);
             }
             catch (Exception ex)
@@ -45,10 +39,20 @@ namespace DowareSLDService
             try
             {
                 foreach (Process p in Process.GetProcesses())
-                    if (p.ProcessName.Equals("SLD"))
+                {
+                    if (p.ProcessName.Equals("SLD") ||
+                        p.ProcessName.Equals("IntegradorPDV") ||
+                        p.ProcessName.Equals("ConcentradorNFe"))
+                    {
+                        File.WriteAllText(@"C:\Temp\SLDService.txt",  $"Serviço '{p.ProcessName}' finalizado com êxito");
                         p.Kill();
+                    }
+                }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                File.WriteAllText(@"C:\Temp\SLDService.txt", ex.Message);
+            }
         }
     }
 }

@@ -61,7 +61,7 @@ namespace SLD.Controller
 
             foreach (FileInfo file in source.GetFiles())
             {
-                LogController.WriteLog($"--------> Copiando {file.Name} para {target.FullName}...");
+                LogController.WriteLog(new ServerLog($"--------> Criando backup de {file.Name}..."));
                 file.CopyTo(Path.Combine(target.FullName, file.Name), true);
             }
         }
@@ -93,41 +93,39 @@ namespace SLD.Controller
             Console.ForegroundColor = ConsoleColor.Yellow;
             try
             {
-                LogController.WriteLog("Buscando atualização para o Concentrador Fiscal...");
+                LogController.WriteLog(new ServerLog("Buscando atualização para o Concentrador Fiscal..."));
                 var credenciais = GoogleDriveController.Autenticar();
                 var servico = GoogleDriveController.AbrirServico(credenciais);
                 GoogleDriveController.Download(servico, "concentrador.version.v1.txt", @"C:\Temp\concentrador.version.v1.txt");
 
                 string curDir = Directory.GetCurrentDirectory();
                 string caminhoConcentrador = Path.Combine(curDir, @"..\ConcentradorFiscal\");
-                
+
                 decimal versaoLocal = decimal.Parse(File.ReadAllText($@"{caminhoConcentrador}\versao.txt"));
                 decimal versaoServidor = decimal.Parse(File.ReadAllText($@"C:\Temp\concentrador.version.v1.txt"));
 
                 if (versaoServidor > versaoLocal)
                 {
                     Backup();
-
-                    LogController.WriteLog("Obtendo a atualização para o Concentrador Fiscal...");
-                    GoogleDriveController.Download(servico, "concentrador.update.v1.zip", @"C:\Temp\concentrador.update.v1.zip");
-
-          //          Directory.CreateDirectory(Path.Combine(curDir, $@"..\ConcentradorFiscal_bak_{ DateTime.Now.ToString("dd MM yyyy HHmmss")}"));
                     Directory.Delete(caminhoConcentrador, true);
-                    Directory.CreateDirectory(caminhoConcentrador);
 
-                    Thread.Sleep(2000);
+                    LogController.WriteLog(new ServerLog("Obtendo a atualização para o Concentrador Fiscal..."));
+                    GoogleDriveController.Download(servico, "concentrador.update.v1.zip", @"C:\Temp\concentrador.update.v1.zip");
+                   
+                    while (!Directory.Exists(caminhoConcentrador))
+                        Directory.CreateDirectory(caminhoConcentrador);
 
-                    LogController.WriteLog("Instalando a atualização para o Concentrador Fiscal...");
+                    LogController.WriteLog(new ServerLog("Instalando a atualização para o Concentrador Fiscal..."));
                     ZipZap zip = new ZipZap();
                     zip.ExtrairArquivoZip(@"C:\Temp\concentrador.update.v1.zip", caminhoConcentrador);
 
-                    LogController.WriteLog("O Concentrador Fiscal foi atualizado com sucesso");
+                    LogController.WriteLog(new ServerLog("O Concentrador Fiscal foi atualizado com sucesso"));
                     Console.ForegroundColor = ConsoleColor.Gray;
                     return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "O Concentrador Fiscal foi atualizado com sucesso", ""));
                 }
                 else
                 {
-                    LogController.WriteLog("O Concentrador Fiscal já está atualizado");
+                    LogController.WriteLog(new ServerLog("O Concentrador Fiscal já está atualizado"));
                     Console.ForegroundColor = ConsoleColor.Gray;
                     return ActionResult.Json(new OperationResult(StatusResult.OPERACAO_OK, "O Concentrador Fiscal já está atualizado", ""));
                 }
@@ -137,7 +135,7 @@ namespace SLD.Controller
                 RestaurarBackup();
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                LogController.WriteLog("Erro ao obter a atualização para o Concentrador Fiscal: " + ex.Message);
+                LogController.WriteLog(new ServerLog("Erro ao obter a atualização para o Concentrador Fiscal: " + ex.Message, ServerLogType.ERROR));
                 Console.ForegroundColor = ConsoleColor.Gray;
                 return ActionResult.Json(new OperationResult(StatusResult.FALHA_INTERNA, "Erro ao obter a atualização para o Concentrador Fiscal: " + ex.Message, ""));
             }

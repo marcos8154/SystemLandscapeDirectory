@@ -4,6 +4,7 @@ using SLD.Model;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Text;
 using System.Threading;
 using System.Timers;
 
@@ -16,14 +17,18 @@ namespace SLD
         {
             Server server = new Server();
             server.Port = 55555;
+            server.ServerEncoding = Encoding.UTF8;
 
             server.RegisterAllModels(Assembly.GetExecutingAssembly(), "SLD.Model");
             server.RegisterAllControllers(Assembly.GetExecutingAssembly(), "SLD.Controller");
-            server.ActionInvoked += Server_ActionInvoked;
 
             var conc = new ConcentradorFiscalController();
             conc.Parar();
             conc.Iniciar();
+
+            var integrador = new IntegradorPDVController();
+            integrador.Parar();
+            integrador.Iniciar();
 
             new Thread(() =>
             {
@@ -37,7 +42,7 @@ namespace SLD
                     if (ex.InnerException != null)
                         msg += $"\n{ex.InnerException.Message}";
 
-                    LogController.WriteLog("FALHA NA INICIALIZAÇÃO DO SERVIDOR DO SLD: " + msg);
+                    LogController.WriteLog(new ServerLog("FALHA NA INICIALIZAÇÃO DO SERVIDOR DO SLD: " + msg, ServerLogType.ERROR));
                 }
             }).Start();
 

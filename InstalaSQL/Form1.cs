@@ -16,6 +16,7 @@ namespace InstalaSQL
 
             FillVersaoSQL();
 
+            button1.Enabled = false;
             if (Environment.Is64BitOperatingSystem)
                 txCaminhoInstalador.Text = @"C:\Program Files (x86)\Doware Sistemas\FrontStore\Server\SQL12_x64.exe";
             else
@@ -39,7 +40,9 @@ namespace InstalaSQL
             {
                 try
                 {
-                    string parametros = $@"/ACTION=install /UpdateEnabled=0 /QS /INSTANCENAME=""{nomeInstancia}"" /BROWSERSVCSTARTUPTYPE={habilitaBrowse} /ERRORREPORTING=1 /INDICATEPROGRESS=1 /IACCEPTSQLSERVERLICENSETERMS=1 /FEATURES=SQL /ADDCURRENTUSERASSQLADMIN=1 /SECURITYMODE=SQL /SAPWD=""{senha}"" /TCPENABLED={habilitaTCP}";
+                    string parametros = $@"/ACTION=install /UpdateEnabled=1 /QS /INSTANCENAME=""{nomeInstancia}"" /BROWSERSVCSTARTUPTYPE={habilitaBrowse} /ERRORREPORTING=1 /INDICATEPROGRESS=1 /IACCEPTSQLSERVERLICENSETERMS=1 /FEATURES=SQL /ADDCURRENTUSERASSQLADMIN=1 /SECURITYMODE=SQL /SAPWD=""{senha}"" /TCPENABLED={habilitaTCP}";
+                    if (string.IsNullOrEmpty(txChave.Text))
+                        parametros += $" /PID={txChave.Text.ToUpper()}";
                     var process = System.Diagnostics.Process.Start(caminhoInstalador, parametros);
                     process.WaitForExit();
 
@@ -58,7 +61,7 @@ namespace InstalaSQL
                 }
             });
 
-            btExecutar.Enabled = true;
+            button1.Enabled = true;
             btExecutar.Text = "EXECUTAR";
         }
 

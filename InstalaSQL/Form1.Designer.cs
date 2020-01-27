@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.cbVersaoBanco = new System.Windows.Forms.ComboBox();
             this.lbVersaoDB = new System.Windows.Forms.Label();
@@ -47,7 +48,9 @@
             this.txCaminhoInstalador = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txChave = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,10 +59,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Unicode MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(53, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 25);
+            this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Configurador do servidor";
             // 
@@ -78,6 +81,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txChave);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.cbVersaoBanco);
@@ -95,8 +101,19 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(1, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(445, 280);
+            this.panel1.Size = new System.Drawing.Size(445, 367);
             this.panel1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button1.Location = new System.Drawing.Point(126, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "ABRIR PORTAS NO FIREWALL";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label8
             // 
@@ -127,9 +144,10 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.BackgroundImage = global::InstalaSQL.Properties.Resources._1499955337microsoft_sql_server_logo_png;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 183);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 267);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(109, 88);
             this.pictureBox1.TabIndex = 15;
@@ -138,7 +156,7 @@
             // btExecutar
             // 
             this.btExecutar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btExecutar.Location = new System.Drawing.Point(327, 245);
+            this.btExecutar.Location = new System.Drawing.Point(328, 329);
             this.btExecutar.Name = "btExecutar";
             this.btExecutar.Size = new System.Drawing.Size(106, 23);
             this.btExecutar.TabIndex = 14;
@@ -243,21 +261,37 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // label5
             // 
-            this.button1.Location = new System.Drawing.Point(132, 245);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "ABRIR PORTAS NO FIREWALL";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 233);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(141, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Chave do produto (opcional)";
+            // 
+            // txChave
+            // 
+            this.txChave.Location = new System.Drawing.Point(195, 230);
+            this.txChave.Name = "txChave";
+            this.txChave.Size = new System.Drawing.Size(225, 20);
+            this.txChave.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(195, 257);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(180, 39);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Caso nenhuma chave seja aplicada,\r\nserá ativado o SQL EXPRESS como\r\npadrão";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 344);
+            this.ClientSize = new System.Drawing.Size(446, 431);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -299,6 +333,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbVersaoBanco;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txChave;
+        private System.Windows.Forms.Label label5;
     }
 }
 

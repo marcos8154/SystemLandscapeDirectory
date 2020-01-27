@@ -22,7 +22,7 @@ namespace BackupDB
          * */
         public static void Main(string[] args)
         {
-            // args = new string[] { "execute", "PRODUCAO", @"caminhoDestino=C:\Backup\" };
+          //  args = new string[] { "execute", "ABC", @"caminhoDestino=C:\Backup\" };
 
             hub = new ServerProgramHub("BackupDB");
             hub.AdicionarParametro("caminhoDestino", "Caminho completo do destino do backup");
@@ -47,7 +47,7 @@ namespace BackupDB
                 Ambiente amb = new AmbienteController().GetAmbiente(hub.NomeAmbiente);
               
                 string sql = $@"BACKUP DATABASE {amb.Base}  
-TO DISK = '{caminho}\{amb.Base}.bak'  
+TO DISK = '{caminho}\Backup {amb.Base} - dia {DateTime.Now.ToString("dd-MM-yyyy")} as {DateTime.Now.ToString("HH-mm")}h.bak'  
    WITH FORMAT,  
       MEDIANAME = '{amb.Base}',  
       NAME = '{amb.Base}'";

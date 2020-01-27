@@ -64,26 +64,8 @@ namespace SLD
                 {
                     if (!string.IsNullOrEmpty(senha))
                         zip.Password = senha;
-
-
-                    //verifica se o destino existe
                     if (Directory.Exists(destino))
-                    {
-                        try
-                        {
-
-                            for (int i = 0; i < zip.Entries.Count; i++)
-                            {
-                                var e = zip.Entries.ToList()[i];
-                                arquivoAtual = e.FileName;
-                                e.Extract(destino, ExtractExistingFileAction.OverwriteSilently);
-                            }
-                        }
-                        catch
-                        {
-                            throw;
-                        }
-                    }
+                        zip.ExtractAll(destino, ExtractExistingFileAction.OverwriteSilently);
                     else
                     {
                         //lança uma exceção se o destino não existe

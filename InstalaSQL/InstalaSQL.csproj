@@ -84,6 +84,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CHAVE SQL STANDARD.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="icone.ico" />
     <None Include="Resources\icone.ico" />
     <None Include="Resources\1499955337microsoft-sql-server-logo-png.png" />
