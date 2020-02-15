@@ -10,6 +10,7 @@ namespace SLD.Controller
     {
         public ActionResult Parar()
         {
+            ActionLocker.AddLock(this, "Parar");
             try
             {
                 foreach (Process proc in Process.GetProcessesByName("IntegradorPDV"))
@@ -22,6 +23,7 @@ namespace SLD.Controller
 
         public ActionResult Iniciar()
         {
+            ActionLocker.AddLock(this, "Iniciar");
             try
             {
                 ProcessStartInfo info = new ProcessStartInfo();

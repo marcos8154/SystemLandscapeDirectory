@@ -10,6 +10,7 @@ namespace SLD.Controller
     {
         public ActionResult Iniciar()
         {
+            ActionLocker.AddLock(this, "Iniciar");
             try
             {
                 ProcessStartInfo info = new ProcessStartInfo();
@@ -44,6 +45,7 @@ namespace SLD.Controller
 
         public ActionResult Parar()
         {
+            ActionLocker.AddLock(this, "Parar");
             try
             {
                 foreach (Process proc in Process.GetProcessesByName("ConcentradorNFe"))
@@ -90,6 +92,7 @@ namespace SLD.Controller
 
         public ActionResult BuscarAtualizacao()
         {
+            ActionLocker.AddLock(this, "BuscarAtualizacao");
             Console.ForegroundColor = ConsoleColor.Yellow;
             try
             {
