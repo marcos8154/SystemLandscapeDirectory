@@ -5,8 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace SLD.Controller
 {
@@ -154,9 +152,9 @@ PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 ";
 
-                string conf = $@"{servidor}
-{usuario}
-{senha}";
+                string conf = $@"{servidor.ToCompact()}
+{usuario.ToCompact()}
+{senha.ToCompact()}";
 
                 if (BancoExiste(servidor, usuario, senha))
                 {
@@ -241,7 +239,7 @@ values (@Nome, @Servidor, @Usuario, @Senha, @Base, @Versao, 1)");
                             Usuario = Compactor.FromCompact(dr.GetString(2)),
                             Senha = Compactor.FromCompact(dr.GetString(3)),
                             Base = Compactor.FromCompact(dr.GetString(4)),
-                          //  Versao = dr.GetString(5),
+                            //  Versao = dr.GetString(5),
                             Online = dr.GetBoolean(6)
                         });
                     }

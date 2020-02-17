@@ -21,15 +21,7 @@ namespace SLD
 
             server.RegisterAllModels(Assembly.GetExecutingAssembly(), "SLD.Model");
             server.RegisterAllControllers(Assembly.GetExecutingAssembly(), "SLD.Controller");
-
-            var conc = new ConcentradorFiscalController();
-            conc.Parar();
-            conc.Iniciar();
-
-            var integrador = new IntegradorPDVController();
-            integrador.Parar();
-            integrador.Iniciar();
-
+            
             new Thread(() =>
             {
                 try
@@ -47,6 +39,14 @@ namespace SLD
             }).Start();
 
             Thread.Sleep(10000);
+
+            var conc = new ConcentradorFiscalController();
+            conc.Parar();
+            conc.Iniciar();
+
+            var integrador = new IntegradorPDVController();
+            integrador.Parar();
+            integrador.Iniciar();
 
             new Thread(() =>
             {

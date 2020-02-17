@@ -18,9 +18,9 @@ namespace SLD.Controller
         {
             string confFile = @".\Files\SLD.conf";
             SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
-            sb.DataSource = File.ReadAllLines(confFile)[0];
-            sb.UserID = File.ReadAllLines(confFile)[1];
-            sb.Password = File.ReadAllLines(confFile)[2];
+            sb.DataSource = File.ReadAllLines(confFile)[0].FromCompact();
+            sb.UserID = File.ReadAllLines(confFile)[1].FromCompact();
+            sb.Password = File.ReadAllLines(confFile)[2].FromCompact();
             sb.InitialCatalog = "SLD";
 
             SqlConnection conn = new SqlConnection(sb.ConnectionString);
