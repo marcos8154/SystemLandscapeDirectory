@@ -8,6 +8,5 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\ob
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.csproj.GenerateResource.Cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.dll
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.pdb
-C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.csproj.CoreCompileInputs.cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.csproj.CopyComplete
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLDClient\obj\Debug\SLDClient.csprojAssemblyReference.cache

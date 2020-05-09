@@ -77,12 +77,10 @@ where Nome = @nome and ambiente = @ambiente";
             info.Arguments = $"paramList";
             info.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
 
-            Process.Start(info);
-
-            while (Process.GetProcessesByName(programa).Length > 0)
-            {
-                //aguardando termino do processo para prosseguir
-            }
+            Process p = new Process();
+            p.StartInfo = info;
+            p.Start();
+            p.WaitForExit();
 
             string[] parametros = File.ReadAllLines(@".\ServerPrograms\ParamsOutPut.txt");
             if (parametros.Length == 0)

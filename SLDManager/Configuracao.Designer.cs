@@ -373,7 +373,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Configuracao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gerenciar Ambientes para o FrontStore - SLD Manager 1.2.06  - Doware Soluções";
+            this.Text = "Gerenciar Ambientes para o FrontStore - SLD Manager  - Doware Soluções";
             this.VisibleChanged += new System.EventHandler(this.Configuracao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.itemLicencaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ambienteBindingSource)).EndInit();

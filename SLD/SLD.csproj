@@ -61,8 +61,11 @@
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
     </Reference>
-    <Reference Include="MobileAppServer, Version=1.4.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MobileAppServer.1.4.6\lib\net45\MobileAppServer.dll</HintPath>
+    <Reference Include="MobileAppServer, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobileAppServer.1.5.2\lib\net45\MobileAppServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MobileAppServerClient, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MobileAppServer.Client.1.2.6\lib\net45\MobileAppServerClient.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -84,6 +87,7 @@
     <Compile Include="Controller\ConcentradorFiscalController.cs" />
     <Compile Include="Controller\ConnectionManager.cs" />
     <Compile Include="Controller\GoogleDriveController.cs" />
+    <Compile Include="Controller\ImgServerController.cs" />
     <Compile Include="Controller\IntegradorPDVController.cs" />
     <Compile Include="Controller\OperationResult.cs" />
     <Compile Include="Controller\ServerProgramController.cs" />
@@ -100,19 +104,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Mappings\AmbienteController.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Mappings\AuthorizationController.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Mappings\HowToMap.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Mappings\ImgServerController.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Mappings\ConcentradorFiscalController.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Mappings\ServerInfoController.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Mappings\ServerProgramController.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ServerPrograms\nothing.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

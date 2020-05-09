@@ -53,6 +53,7 @@
     <Compile Include="AmbienteController.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="ConcentradorFiscalController.cs" />
+    <Compile Include="ImageServerController.cs" />
     <Compile Include="LicencaController.cs" />
     <Compile Include="Model\Ambiente.cs" />
     <Compile Include="Model\FaturaLicenca.cs" />

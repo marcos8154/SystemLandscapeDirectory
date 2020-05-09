@@ -8,7 +8,6 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debu
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\obj\Debug\SLD.exe
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\obj\Debug\SLD.pdb
-C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\obj\Debug\SLD.csproj.CoreCompileInputs.cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\obj\Debug\SLD.csproj.CopyComplete
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\client_id.json
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Google.Apis.Auth.dll
@@ -32,3 +31,6 @@ C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debu
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Mappings\ServerProgramController.xml
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\obj\Debug\SLD.csprojAssemblyReference.cache
 C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Mappings\AuthorizationController.xml
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Mappings\ImgServerController.xml
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\Mappings\HowToMap.xml
+C:\Users\Marcos Vinícius\Documents\Visual Studio 2015\Projects\SLD\SLD\bin\Debug\MobileAppServerClient.dll

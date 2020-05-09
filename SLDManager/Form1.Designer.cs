@@ -158,7 +158,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 16);
             this.label4.TabIndex = 12;
-            this.label4.Text = "SLD Manager - v1.2.06";
+            this.label4.Text = "SLD Manager - v1.2.20";
             // 
             // label5
             // 

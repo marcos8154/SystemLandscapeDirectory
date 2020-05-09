@@ -42,9 +42,10 @@ namespace DowareSLDService
                 {
                     if (p.ProcessName.Equals("SLD") ||
                         p.ProcessName.Equals("IntegradorPDV") ||
-                        p.ProcessName.Equals("ConcentradorNFe"))
+                        p.ProcessName.Equals("ConcentradorNFe") ||
+                        p.ProcessName.Equals("FSImageServer") ||
+                        p.ProcessName.Equals("ServContaEstoque"))
                     {
-                        File.WriteAllText(@"C:\Temp\SLDService.txt",  $"Serviço '{p.ProcessName}' finalizado com êxito");
                         p.Kill();
                     }
                 }

@@ -1,0 +1,15 @@
+{
+  //se true, deverá ser configurado o arquivo loadbalanceserverconfig.json
+  "IsLoadBalanceFrontServer": false,
+  "TCPPort": 7000,
+  "BufferSize": 10000000,
+  "Encoding": "UTF-8",
+  "MaxThreadsCount": 50,
+  "EnableHTTPComunication": false,
+  "HttpServerAddress": "http://localhost:7001",
+  "TempImagesPath": "C:\\IMGSERV\\Temp",
+  "ImageStoragePath": "C:\\IMGSERV\\Storage",
+  //nivel de conversão das imagens recebidas pelo servidor
+  //entre 0 a 100, mais alto = maior qualidade (e também tamanho)
+  "ImageQualityConvertLevel": "80L"
+}

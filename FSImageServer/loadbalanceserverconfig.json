@@ -1,0 +1,33 @@
+{
+  //numero de tentativas para se obter um servidor
+  //disponível no pool
+  "MaxAttemptsToGetAvailableServer": 3,
+
+  //caso nenhum servidor disponível seja encontrado
+  //no pool, será retornado um cache da requisição
+  //anterior
+  "CacheResultsForUnreachableServers": true,
+
+  "SubServers":
+  [
+    {
+      //Serv1
+      "Address": "localhost",
+      "Port": 7003,
+      "Encoding": "UTF-8",
+      "BufferSize": 10000000,
+
+      //maximo de tentativas para conectar no sub-servidor
+      "MaxConnectionsAttemtps": 3,
+
+      //maximo de processos simultâneos suportados pelo sub-servidor
+      //se este sub-server estiver ocupado, o balancer tentará obter outro
+      //servidor do pool
+      //se nao houver outro servidor no pool e houver uma resposta já em cache,
+      //retornará do cache. Se não, retornará não encontrado
+      "MaxThreadsCount": 10
+    }
+
+    //caso haja mais servers, repetir a seção abaixo com os dados do sub-server
+  ]
+}

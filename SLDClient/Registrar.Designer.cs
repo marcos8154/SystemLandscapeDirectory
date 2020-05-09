@@ -211,7 +211,7 @@
             this.MinimizeBox = false;
             this.Name = "Registrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "System Landscape Directory do Curae ERP";
+            this.Text = "SLD Manager - Registrar Servidor";
             this.Load += new System.EventHandler(this.Registrar_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
